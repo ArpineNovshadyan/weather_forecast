@@ -1,0 +1,18 @@
+.back {
+   
+    background-image: url("resources/images/back_img.png");
+    height: 100vh;
+    width: 100%
+}
+.jumbotron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    opacity: 0.5;
+    margin-top: -1em;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    /* border: 1px dashed deeppink; */
+}
