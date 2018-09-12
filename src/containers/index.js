@@ -17,11 +17,12 @@ class Main extends Component {
     componentDidMount() {
 
         if (!this.props.days_list.hasOwnProperty('list')) {
-            var carrent_city = 'Paris'
+            var carrent_city = 'Paris';
         }
         else {
             carrent_city = this.props.days_list.city.name
         }
+
         this.props.fetchData(carrent_city);
     }
     handleDayClick = (index) => {
@@ -40,9 +41,22 @@ class Main extends Component {
             var main = full_data.weather[0].main;
             var desc = full_data.weather[0].description;
             var city = this.props.days_list.city.name
+
+            if (main === 'Clear') {
+                var back = 'back'
+            }
+            else if (main === 'Rain') {
+                back = 'rainy'
+            }
+            else if (main === 'Clouds') {
+                back = 'cloudly'
+            }
+            else {
+                back = 'back'
+            }
         }
         return (
-            <div className='back'>
+            <div className={back}>
                 {
                     this.props.loading ?
                         <div className='svg_position'>

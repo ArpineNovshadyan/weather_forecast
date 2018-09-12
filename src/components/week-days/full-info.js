@@ -4,9 +4,7 @@ import AppStrings from './../../core/settings/strings';
 import AppConfigs from './../../core/settings/configs';
 
 export default class FullInfo extends Component {
-  constructor(props) {
-    super(props);
-  }
+ 
   render() {
     return (
       <div className='container-fluid border_full'>

@@ -98,6 +98,16 @@ svg:nth-child(1){stroke:#4a90e2;}
      height: 100vh;
      width: 100%
  }
+ .rainy {
+  background-image: url("../../resources/images/rainy.jpg");
+  height: 100vh;
+  width: 100%
+ }
+ .cloudly {
+  background-image: url("../../resources/images/cloudly.png");
+  height: 100vh;
+  width: 100%
+ }
  .jumbotron {
   position: absolute;
   top: 48%;
